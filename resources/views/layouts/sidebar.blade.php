@@ -9,7 +9,7 @@
                 <li class="menu-title" key="t-menu">Menu</li>
 
                 <li>
-                    <a href="{{url('/home')}}" class="waves-effect">
+                    <a href="{{url('/admin')}}" class="waves-effect">
                         <i class="bx bx-home-circle"></i>
                         <span key="t-dashboards">Dashboards</span>
                     </a>
@@ -23,7 +23,7 @@
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="{{route('slider.index')}}">Slider</a></li>
                         <li><a href="{{route('testimonial.index')}}" key="t-horizontal">Testimonials</a></li>
-                        <li><a href="layouts-horizontal.html" key="t-horizontal">Articals</a></li>
+                        <li><a href="{{route('news.index')}}" key="t-horizontal">News</a></li>
                     </ul>
                 </li>
                 <li>
@@ -33,7 +33,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="javascript: void(0);">
+                    <a href="{{route('services.index')}}">
                         <i class="bx bx-layout"></i>
                         <span key="t-layouts">Services</span>
                     </a>

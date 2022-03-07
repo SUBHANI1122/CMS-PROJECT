@@ -121,7 +121,7 @@ class TeamController extends Controller
      */
     public function destroy($id)
     {
-        Slider::destroy($id);
+        $this->model::destroy($id);
         return redirect(route($this->route . ".index"));
     }
 }

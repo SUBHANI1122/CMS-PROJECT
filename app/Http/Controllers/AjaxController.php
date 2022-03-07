@@ -49,7 +49,9 @@ class AjaxController extends Controller
 
     public function remove_media_files(Request $request)
     {
+        if(file_exists('images/'.$request->filename) AND !empty($request->filename)){
         unlink(public_path("images/".$request->filename));
+        }
         return true;
     }
 

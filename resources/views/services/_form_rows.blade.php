@@ -5,8 +5,7 @@
         @else
             <td></td>
         @endif
-        <td>{{$item->name}}</td>
-        <td>{{$item->designation}}</td>
+        <td>{{$item->title}}</td>
         <td>
             @include('components.view_edit_delete_buttons')
         </td>

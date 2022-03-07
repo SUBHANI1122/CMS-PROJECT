@@ -3,42 +3,22 @@
     <link rel="stylesheet" type="text/css" href="{{asset('jquery-ui/jquery-ui.min.css')}}">
 @endpush
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
         <div class="form-group">
-            {{ Form::label('name', 'Name') }}
-            {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name']) }}
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="form-group">
-            {{ Form::label('designation', 'Designation') }}
-            {{ Form::text('designation', null, ['class' => 'form-control', 'placeholder' => 'Designation']) }}
+            {{ Form::label('title', 'Title') }}
+            {{ Form::text('title', null, ['class' => 'form-control', 'placeholder' => 'Title']) }}
         </div>
     </div>
 </div>
 <div class="row">
-    <div class="col-md-4">
-        <div class="form-group">
-            {{ Form::label('email', 'Email Link') }}
-            {{ Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) }}
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="form-group">
-            {{ Form::label('whatsapp', 'WhatsApp Link') }}
-            {{ Form::text('whatsapp', null, ['class' => 'form-control', 'placeholder' => 'WhatsApp Link']) }}
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="form-group">
-            {{ Form::label('twitter', 'Twitter Link') }}
-            {{ Form::text('twitter', null, ['class' => 'form-control', 'placeholder' => 'Twitter Link']) }}
-        </div>
+    <div class="col-md-12">
+        {{ Form::label('description', 'Description') }}
+        {{ Form::textarea('description', null, ['class' => 'form-control']) }}
     </div>
 </div>
 <div class="row">
     <div class="col-md-4">
-        <label>Add Slider Images</label>
+        <label>Add Service Images</label>
         <div class="needsclick dropzone" id="document-dropzone">
         </div>
     </div>

@@ -2,8 +2,7 @@
 @section('table_head')
     <tr>
         <th>#</th>
-        <th>Name</th>
-        <th>Designation</th>
+        <th>Title</th>
         <th style="width: 100px">Actions</th>
     </tr>
 @endsection
